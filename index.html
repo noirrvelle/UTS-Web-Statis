@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In - Noir</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="Noir-sign-in">
+    <!-- Kolom Kiri: Video Background & Branding -->
+    <aside class="creative-community video-container">
+
+      <!-- 1. VIDEO DI-TARUH PALING ATAS DI DALAM ASIDE -->
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="image/animasi-triangle.mp4" type="video/mp4" />
+      </video>
+      
+      <!-- 2. OVERLAY GELAP TRANSAPARAN -->
+      <div class="video-overlay"></div>
+
+      <!-- 3. KONTEN TEKS EDITORIAL -->
+      <div class="editorial-heading">
+        <div class="brand-top-row">
+          <p class="overline">A HOME FOR CREATIVE MINDS</p>
+          <div class="google-mark">
+            <img class="vector" src="image/logo.png" alt="" aria-hidden="true" />
+          </div>
+        </div>
+        <h1 class="editorial-title">A little space.<br/>A lot of possibility.</h1>
+        <p class="community-invitation">Share what you make. Find your people.<br/>Let your next big idea take root.</p>
+      </div>
+
+      <!-- 4. PENGISI RUANG TENGAH (MENGGANTIKAN GAMBAR BLOOM) -->
+      <div class="animated-spacer"></div>
+
+      <div class="artwork-credit">
+        <div class="artwork-description">
+          <h2 class="artwork-title">Possibility in bloom</h2>
+          <p class="artwork-collection">An original Noir study · 2026</p>
+        </div>
+        <p class="editorial-note">Made to belong.</p>
+      </div>
+    </aside>
+
+    <!-- Kolom Kanan: Authentication Form -->
+    <main class="authentication">
+      <header class="header">
+        <div class="brand-logo">
+          <img class="brand-mark" src="image/logo.png" alt="Noir logo" />
+          <span class="wordmark">Noir</span>
+        </div>
+        <a href="#" class="help-link">Need a hand?</a>
+      </header>
+
+      <div class="form-column">
+        <div class="sign-in-form">
+          <div class="welcome">
+            <h2 class="title">Good to see you.</h2>
+            <p class="description">Sign in to your corner of the creative world.</p>
+          </div>
+
+          <div class="credentials">
+            <button type="button" class="google-sign-in" aria-label="Sign in with Google">
+              <img class="google-mark-img" src="image/google.png" alt="" aria-hidden="true" />
+              <span class="label">Sign in with Google</span>
+            </button>
+
+            <div class="alternative-sign-in" role="separator" aria-label="atau">
+              <div class="divider"></div>
+              <span class="text-wrapper">or</span>
+              <div class="divider"></div>
+            </div>
+
+            <form action="#" method="POST" class="fields">
+              <div class="input-field">
+                <label for="username" class="field-heading">Email/Username</label>
+                <input id="username" class="input" placeholder="Enter your email or username" type="text" required />
+              </div>
+
+              <div class="input-field">
+                <div class="label-row">
+                  <label for="password" class="field-heading">Password</label>
+                  <a href="#" class="password-recovery">Forgot Password?</a>
+                </div>
+                <div class="input-password-wrapper">
+                  <input id="password" class="input" placeholder="Enter your password" type="password" required />
+                  <button type="button" class="eye-button" aria-label="Show or hide password">
+                    <img class="img" src="image/eye-icon.png" alt="" aria-hidden="true" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="remember-me-group">
+                <input type="checkbox" id="remember-me" class="checkbox-input" />
+                <label for="remember-me" class="label-3">Remember Me</label>
+              </div>
+
+              <button type="submit" class="sign-in-action">
+                <span class="label-4">Sign In</span>
+              </button>
+            </form>
+
+            <p class="create-account">
+              <span class="span">New to Noir? </span>
+              <a href="#" class="text-wrapper-2">Create an account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span class="text-wrapper-3">© 2026 Noir</span>
+        <nav class="policies">
+          <a href="#" class="text-wrapper-3">Privacy</a>
+          <a href="#" class="text-wrapper-3">Terms</a>
+        </nav>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

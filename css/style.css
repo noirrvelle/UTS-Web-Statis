@@ -1,0 +1,458 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+  background-color: #f3f7f1;
+}
+
+.Noir-sign-in {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* --- Kolom Kiri: Container Video Background --- */
+.Noir-sign-in .creative-community {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #0d1f18; /* Latar dasar gelap agar tidak bentrok dengan warna kanan */
+}
+
+/* Video Penuh Memenuhi Area Kolom Kiri */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Layer Transparan agar Teks Mudah Dibaca */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+/* Pengisi Ruang Kosong Tengah */
+.Noir-sign-in .animated-spacer {
+  flex: 1;
+}
+
+/* Memastikan Semua Konten Teks Ada di Atas Video */
+.Noir-sign-in .editorial-heading,
+.Noir-sign-in .animated-spacer,
+.Noir-sign-in .artwork-credit {
+  position: relative;
+  z-index: 3;
+}
+
+.Noir-sign-in .editorial-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Noir-sign-in .brand-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Noir-sign-in .overline {
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 0.22px;
+}
+
+.Noir-sign-in .google-mark {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.Noir-sign-in .vector {
+  width: 100%;
+  height: 100%;
+}
+
+.Noir-sign-in .editorial-title {
+  font-family: "Lora-Regular", Georgia, serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 1.15;
+}
+
+.Noir-sign-in .community-invitation {
+  color: #f0f0f0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.Noir-sign-in .artwork-credit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Noir-sign-in .artwork-title {
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.Noir-sign-in .artwork-collection {
+  color: #e0e0e0;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.Noir-sign-in .editorial-note {
+  font-family: "Lora-Italic", Georgia, serif;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* --- Kolom Kanan: Authentication Form --- */
+.Noir-sign-in .authentication {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Noir-sign-in .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+}
+
+.Noir-sign-in .brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Noir-sign-in .brand-mark {
+  width: 32px;
+  height: 30px;
+}
+
+.Noir-sign-in .wordmark {
+  font-family: "Inter-Bold", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #24251f;
+  font-size: 24px;
+}
+
+.Noir-sign-in .help-link {
+  color: #5f7a68;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.Noir-sign-in .help-link:hover {
+  text-decoration: underline;
+}
+
+.Noir-sign-in .form-column {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px 0;
+}
+
+.Noir-sign-in .sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Noir-sign-in .welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Noir-sign-in .title {
+  font-size: 32px;
+  color: #1f4d3a;
+  font-weight: 400;
+}
+
+.Noir-sign-in .description {
+  color: #5f7a68;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.Noir-sign-in .credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Noir-sign-in .google-sign-in {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dadbd2;
+  cursor: pointer;
+  transition: 0.2s ease;
+  width: 100%;
+}
+
+.Noir-sign-in .google-sign-in:hover {
+  background-color: #f8f9f6;
+}
+
+.Noir-sign-in .google-mark-img {
+  width: 18px;
+  height: 18px;
+}
+
+.Noir-sign-in .label {
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #1f4d3a;
+  font-size: 14px;
+}
+
+.Noir-sign-in .alternative-sign-in {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.Noir-sign-in .divider {
+  flex: 1;
+  height: 1px;
+  background-color: #dadbd2;
+}
+
+.Noir-sign-in .text-wrapper {
+  color: #5f7a68;
+  font-size: 13px;
+}
+
+.Noir-sign-in .fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.Noir-sign-in .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Noir-sign-in .field-heading {
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #1f4d3a;
+  font-size: 13px;
+}
+
+.Noir-sign-in .label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Noir-sign-in .input {
+  height: 48px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dadbd2;
+  font-size: 14px;
+  color: #1f4d3a;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.Noir-sign-in .input:focus {
+  border-color: #2f6b4a;
+  box-shadow: 0 0 0 3px rgba(47, 107, 74, 0.15);
+}
+
+.Noir-sign-in .password-recovery {
+  font-family: "Inter-Medium", Helvetica, sans-serif;
+  font-size: 12px;
+  color: #2f6b4a;
+  text-decoration: none;
+}
+
+.Noir-sign-in .password-recovery:hover {
+  text-decoration: underline;
+}
+
+.Noir-sign-in .input-password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Noir-sign-in .eye-button {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.Noir-sign-in .eye-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.Noir-sign-in .remember-me-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.Noir-sign-in .checkbox-input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2f6b4a;
+  cursor: pointer;
+}
+
+.Noir-sign-in .label-3 {
+  color: #1f4d3a;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.Noir-sign-in .sign-in-action {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f6b4a;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.2s ease;
+  width: 100%;
+}
+
+.Noir-sign-in .sign-in-action:hover {
+  background-color: #235238;
+}
+
+.Noir-sign-in .label-4 {
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.Noir-sign-in .create-account {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.Noir-sign-in .span {
+  color: #5f7a68;
+}
+
+.Noir-sign-in .text-wrapper-2 {
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #2f6b4a;
+  text-decoration: none;
+}
+
+.Noir-sign-in .text-wrapper-2:hover {
+  text-decoration: underline;
+}
+
+.Noir-sign-in .footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  font-size: 11px;
+  color: #5f7a68;
+}
+
+.Noir-sign-in .policies {
+  display: flex;
+  gap: 16px;
+}
+
+.Noir-sign-in .policies a {
+  color: #5f7a68;
+  text-decoration: none;
+}
+
+.Noir-sign-in .policies a:hover {
+  text-decoration: underline;
+}
+
+/* --- Media Query: Desktop Split-Screen (≥ 1024px) --- */
+@media (min-width: 1024px) {
+  .Noir-sign-in {
+    flex-direction: row;
+  }
+
+  .Noir-sign-in .creative-community {
+    display: flex;
+    width: 48%;
+    padding: 54px 60px 48px;
+  }
+
+  .Noir-sign-in .authentication {
+    width: 52%;
+    padding: 54px 64px 48px;
+  }
+
+  .Noir-sign-in .header,
+  .Noir-sign-in .footer {
+    max-width: 100%;
+  }
+
+  .Noir-sign-in .editorial-title {
+    font-size: 52px;
+  }
+}

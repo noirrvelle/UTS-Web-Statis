@@ -1,0 +1,47 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #2f6b4a !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold");
+}
+@font-face {
+  font-family: "Lora-Regular";
+  src: local("Lora-Regular");
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular");
+}
+@font-face {
+  font-family: "Lora-Italic";
+  src: local("Lora-Italic");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: local("Inter-Medium");
+}
