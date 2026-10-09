@@ -14,7 +14,6 @@ html, body {
   width: 100%;
 }
 
-/* --- Kolom Kiri: Container Video Background --- */
 .Noir-sign-in .creative-community {
   display: none; 
   flex-direction: column;
@@ -23,10 +22,9 @@ html, body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #0d1f18; /* Latar dasar gelap agar tidak bentrok dengan warna kanan */
+  background-color: #0d1f18; 
 }
 
-/* Video Penuh Memenuhi Area Kolom Kiri */
 .bg-video {
   position: absolute;
   top: 0;
@@ -37,7 +35,6 @@ html, body {
   z-index: 1;
 }
 
-/* Layer Transparan agar Teks Mudah Dibaca */
 .video-overlay {
   position: absolute;
   top: 0;
@@ -48,12 +45,10 @@ html, body {
   z-index: 2;
 }
 
-/* Pengisi Ruang Kosong Tengah */
 .Noir-sign-in .animated-spacer {
   flex: 1;
 }
 
-/* Memastikan Semua Konten Teks Ada di Atas Video */
 .Noir-sign-in .editorial-heading,
 .Noir-sign-in .animated-spacer,
 .Noir-sign-in .artwork-credit {
@@ -133,7 +128,6 @@ html, body {
   font-size: 18px;
 }
 
-/* --- Kolom Kanan: Authentication Form --- */
 .Noir-sign-in .authentication {
   display: flex;
   flex-direction: column;
@@ -430,7 +424,6 @@ html, body {
   text-decoration: underline;
 }
 
-/* --- Media Query: Desktop Split-Screen (≥ 1024px) --- */
 @media (min-width: 1024px) {
   .Noir-sign-in {
     flex-direction: row;
